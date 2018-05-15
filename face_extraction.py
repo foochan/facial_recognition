@@ -6,7 +6,7 @@ SRC_DIR_PATH = "./Photos"
 in_photos = os.listdir(SRC_DIR_PATH)
 photo_folders = [f for f in in_photos if os.path.isdir(os.path.join(SRC_DIR_PATH, f))]
 
-# 使用する評価器を読み込む。
+# 使用するカスケード分類器を読み込む。分類器を変えたいときは、Cascadesフォルダから、使用したい分類器を選ぶ。
 cascade_path = "./Cascades/haarcascade_frontalface_default.xml"
 cascade = cv2.CascadeClassifier(cascade_path)
 
